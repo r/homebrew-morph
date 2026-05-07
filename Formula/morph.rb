@@ -1,13 +1,13 @@
 class Morph < Formula
   desc "Behavioral version control for AI-assisted development"
   homepage "https://github.com/r/morph"
-  version "0.48.1"
+  version "0.48.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/r/morph/releases/download/v0.48.1/morph-aarch64-apple-darwin.tar.gz"
-      sha256 "430248faede19b563f1ffb1826363591cc00f52acb37f34e5d5dd99810f7d664"
+      url "https://github.com/r/morph/releases/download/v0.48.3/morph-aarch64-apple-darwin.tar.gz"
+      sha256 "136bb914e471728a17ba2101a296bed3f259fb52bf1ceaae53da0a980b7b5f6d"
     else
       odie "morph does not currently ship Intel macOS binaries; install from source via 'cargo install --path morph-cli && cargo install --path morph-mcp'."
     end
@@ -15,11 +15,11 @@ class Morph < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/r/morph/releases/download/v0.48.1/morph-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "692df9c17f3110ea8787032136a1df2b48179d7a6f0373d96eebdca05945b05d"
+      url "https://github.com/r/morph/releases/download/v0.48.3/morph-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "df8a6066d0295e51cea484cede403b2029b1fe4cafd26be6ad49695f99ff1b52"
     else
-      url "https://github.com/r/morph/releases/download/v0.48.1/morph-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e38dcc954627513e1e6d1ec2de6b1878bfcf77e7147db134af73b7db0ba386fb"
+      url "https://github.com/r/morph/releases/download/v0.48.3/morph-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "009ea6719da6f4d6b2d704f6173bc4fd8b807e6f65694c026b6a686c6406c46c"
     end
   end
 
